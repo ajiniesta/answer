@@ -4,30 +4,37 @@
 # to generate your .gitignore file.
 
 # web application files
-/web-app/WEB-INF/classes
+answer-core/web-app/WEB-INF/classes
 
 # default HSQL database files for production mode
-/prodDb.*
+answer-core/prodDb.*
 
 # general HSQL database files
 *Db.properties
 *Db.script
 
 # logs
-/stacktrace.log
-/test/reports
-/logs
+answer-core/stacktrace.log
+answer-core/test/reports
+answer-core/logs
 
 # project release file
-/*.war
+answer-core/*.war
 
 # plugin release files
-/*.zip
-/plugin.xml
+answer-core/*.zip
+answer-core/plugin.xml
 
 # older plugin install locations
-/plugins
-/web-app/plugins
+answer-core/plugins
+answer-core/web-app/plugins
 
 # "temporary" build files
-/target
+answer-core/target
+
+.classpath
+.project
+.settings
+
+*sublime-*
+answer-core/target-eclipse

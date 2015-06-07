@@ -23,25 +23,20 @@
 			</g:if>
 			<ol class="property-list question">
 			
+				<g:if test="${questionInstance?.alternateQuestion}">
+				<li class="fieldcontain">
+					<span id="alternateQuestion-label" class="property-label"><g:message code="question.alternateQuestion.label" default="Alternate Question" /></span>
+					
+						<span class="property-value" aria-labelledby="alternateQuestion-label"><g:fieldValue bean="${questionInstance}" field="alternateQuestion"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${questionInstance?.certification}">
 				<li class="fieldcontain">
 					<span id="certification-label" class="property-label"><g:message code="question.certification.label" default="Certification" /></span>
 					
 						<span class="property-value" aria-labelledby="certification-label"><g:link controller="certification" action="show" id="${questionInstance?.certification?.id}">${questionInstance?.certification?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${questionInstance?.goodAnswers}">
-				<li class="fieldcontain">
-					<span id="goodAnswers-label" class="property-label"><g:message code="question.goodAnswers.label" default="Good Answers" /></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${questionInstance?.possibles}">
-				<li class="fieldcontain">
-					<span id="possibles-label" class="property-label"><g:message code="question.possibles.label" default="Possibles" /></span>
 					
 				</li>
 				</g:if>

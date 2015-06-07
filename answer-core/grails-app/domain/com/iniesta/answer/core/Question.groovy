@@ -1,11 +1,10 @@
 package com.iniesta.answer.core
 
 class Question {
+	static hasMany = [answers: Answer]
 
-	Certification Certification
+	Certification certification
 	String question
-	String[] possibles
-	int[] goodAnswers
 
     static constraints = {
     }

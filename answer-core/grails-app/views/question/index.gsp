@@ -24,8 +24,6 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="alternateQuestion" title="${message(code: 'question.alternateQuestion.label', default: 'Alternate Question')}" />
-					
 						<th><g:message code="question.certification.label" default="Certification" /></th>
 					
 						<g:sortableColumn property="question" title="${message(code: 'question.question.label', default: 'Question')}" />
@@ -35,8 +33,6 @@
 				<tbody>
 				<g:each in="${questionInstanceList}" status="i" var="questionInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${questionInstance.id}">${fieldValue(bean: questionInstance, field: "alternateQuestion")}</g:link></td>
 					
 						<td>${fieldValue(bean: questionInstance, field: "certification")}</td>
 					

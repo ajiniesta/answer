@@ -9,7 +9,7 @@ class BootStrap {
     	def yes = new Answer(name: 'Yes', correct: true).save()
     	def no = new Answer(name: 'No', correct: false).save()
 
-        def question = new Question(certification: ccdh, question: "Is this a sample question?").save()
+        def question = new Question(certification: ccdh, question: "Is this a sample question?", answers: [yes, no]).save()
     	//new Question(certification: ccdh, question: 'Is this a sample question?', answers: [yes, no]).save()
     	println "End of the bootstrap"
     }

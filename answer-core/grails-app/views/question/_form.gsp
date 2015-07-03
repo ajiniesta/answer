@@ -2,14 +2,14 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: questionInstance, field: 'alternateQuestion', 'error')} required">
-	<label for="alternateQuestion">
-		<g:message code="question.alternateQuestion.label" default="Alternate Question" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="alternateQuestion" required="" value="${questionInstance?.alternateQuestion}"/>
-
-</div>
+<%--<div class="fieldcontain ${hasErrors(bean: questionInstance, field: 'alternateQuestion', 'error')} required">--%>
+<%--	<label for="alternateQuestion">--%>
+<%--		<g:message code="question.alternateQuestion.label" default="Alternate Question" />--%>
+<%--		<span class="required-indicator">*</span>--%>
+<%--	</label>--%>
+<%--	<g:textField name="alternateQuestion" required="" value="${questionInstance?.alternateQuestion}"/>--%>
+<%----%>
+<%--</div>--%>
 
 <div class="fieldcontain ${hasErrors(bean: questionInstance, field: 'certification', 'error')} required">
 	<label for="certification">
@@ -29,3 +29,4 @@
 
 </div>
 
+a

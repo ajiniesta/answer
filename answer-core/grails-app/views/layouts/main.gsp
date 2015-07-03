@@ -16,6 +16,10 @@
 		<link rel="stylesheet" href="${resource(dir: 'css/bootstrap', file: 'bootstrap.min.css')}" type="text/css" >
 		<link rel="stylesheet" href="${resource(dir: 'css/bootstrap', file: 'bootstrap-theme.min.css')}" type="text/css" >
 		
+		<script type="text/javascript" src="${resource(dir: 'js/angular', file: 'angular.min.js')}"></script>
+		<script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'jquery-1.11.3.min.js')}"></script>
+		<script type="text/javascript" src="${resource(dir: 'js/bootstrap', file: 'bootstrap.min.js')}"></script>
+				
 		<g:layoutHead/>
 	</head>
 	<body>
@@ -68,8 +72,6 @@
 		<g:javascript library="application"/>
 
 		<r:layoutResources />
-		<script type="text/javascript" src="${resource(dir: 'js/angular', file: 'angular.min.js')}"></script
-		<script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'jquery-1.11.3.min.js')}"></script>
-		<script type="text/javascript" src="${resource(dir: 'js/bootstrap', file: 'bootstrap.min.js')}"></script>
+		
 	</body>
 </html>
